@@ -1,0 +1,29 @@
+/* Thème commun aux pages de l'extension (popup, options, notes). */
+:root {
+  --fond: #15151a; --carte: #1f1f26; --bord: rgba(255, 255, 255, 0.11); --texte: #f3f3f6;
+  --texte2: #9d9da9; --accent: #8b97ff; --survol: rgba(255, 255, 255, 0.07); --danger: #ff7b7b;
+  --pad: 12px; color-scheme: dark;
+}
+:root[data-theme='clair'] {
+  --fond: #f5f5f8; --carte: #fff; --bord: rgba(0, 0, 0, 0.12); --texte: #1b1b1f;
+  --texte2: #62626c; --accent: #4757e6; --survol: rgba(0, 0, 0, 0.05); --danger: #d63b3b; color-scheme: light;
+}
+@media (prefers-color-scheme: light) {
+  :root[data-theme='auto'] {
+    --fond: #f5f5f8; --carte: #fff; --bord: rgba(0, 0, 0, 0.12); --texte: #1b1b1f;
+    --texte2: #62626c; --accent: #4757e6; --survol: rgba(0, 0, 0, 0.05); --danger: #d63b3b; color-scheme: light;
+  }
+}
+:root[data-densite='compacte'] { --pad: 7px; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fond); color: var(--texte); font: 14px/1.45 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+a { color: var(--accent); }
+button, select, input[type='text'], textarea {
+  font: inherit; color: inherit; background: var(--carte); border: 1px solid var(--bord); border-radius: 9px; padding: 6px 12px;
+}
+button { cursor: pointer; }
+button:hover { background: var(--survol); }
+button.primaire { background: var(--accent); color: #fff; border-color: transparent; }
+button.danger { color: var(--danger); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.discret { color: var(--texte2); font-size: 12px; }

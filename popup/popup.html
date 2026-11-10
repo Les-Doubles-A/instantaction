@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>InstantAction</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <strong>⚡ InstantAction</strong>
+    <label class="interrupteur"><input type="checkbox" id="actif" /> <span>Activé</span></label>
+  </header>
+  <button id="palette" class="primaire grand">🔍 Ouvrir la palette <kbd>Alt+Space</kbd></button>
+  <p id="message" class="discret" role="status" hidden></p>
+  <h2>Actions favorites</h2>
+  <ul id="favoris"></ul>
+  <nav>
+    <button data-section="actions">Gérer les actions</button>
+    <button data-section="raccourcis">Raccourcis</button>
+    <button data-section="general">Paramètres</button>
+    <button id="notes">🗒️ Mes notes</button>
+  </nav>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

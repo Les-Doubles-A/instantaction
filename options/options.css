@@ -1,0 +1,31 @@
+@import url('../shared/theme.css');
+body { display: grid; grid-template-columns: 220px 1fr; min-height: 100vh; }
+aside { padding: 22px 14px; border-right: 1px solid var(--bord); position: sticky; top: 0; height: 100vh; }
+aside h1 { font-size: 17px; margin: 0 8px 18px; }
+nav { display: flex; flex-direction: column; gap: 2px; }
+nav a { padding: 8px 12px; border-radius: 9px; color: var(--texte); text-decoration: none; }
+nav a:hover { background: var(--survol); }
+nav a[aria-current='page'] { background: var(--survol); box-shadow: inset 3px 0 0 var(--accent); font-weight: 600; }
+main { max-width: 760px; padding: 28px 32px 80px; }
+h2 { margin: 0 0 4px; font-size: 22px; }
+h3 { margin: 26px 0 8px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--texte2); }
+.carte { background: var(--carte); border: 1px solid var(--bord); border-radius: 14px; padding: 4px 16px; margin-top: 10px; }
+.ligne { display: flex; align-items: center; gap: 12px; padding: var(--pad) 0; border-bottom: 1px solid var(--bord); }
+.ligne:last-child { border-bottom: 0; }
+.ligne .texte { flex: 1; min-width: 0; }
+.ligne .titre { font-weight: 600; }
+.ligne input[type='checkbox'] { width: 18px; height: 18px; accent-color: var(--accent); }
+.etoile { background: transparent; border: 0; font-size: 18px; color: var(--texte2); padding: 2px 6px; }
+.etoile.on { color: #ffcc4d; }
+.formulaire { display: grid; gap: 10px; padding: 14px 0; }
+.formulaire label { display: grid; gap: 4px; font-size: 13px; color: var(--texte2); }
+.formulaire input[type='text'], .formulaire select { width: 100%; }
+.coches { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.coches label { display: flex; align-items: center; gap: 6px; color: var(--texte); }
+.puces { display: flex; flex-wrap: wrap; gap: 6px; min-height: 30px; }
+.puce { display: inline-flex; gap: 6px; align-items: center; background: var(--survol); border: 1px solid var(--bord); border-radius: 999px; padding: 3px 10px; }
+.puce button { border: 0; background: transparent; padding: 0 2px; }
+kbd { font: 12px ui-monospace, monospace; border: 1px solid var(--bord); border-radius: 6px; padding: 2px 8px; background: var(--survol); }
+.rangee-boutons { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0; }
+.alerte { margin-top: 10px; color: var(--danger); min-height: 1.4em; }
+@media (max-width: 720px) { body { grid-template-columns: 1fr; } aside { position: static; height: auto; } }

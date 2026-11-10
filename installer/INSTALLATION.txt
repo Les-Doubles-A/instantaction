@@ -1,0 +1,21 @@
+Installation de l'extension instantaction
+==================================
+
+L'extension a ete copiee dans le sous-dossier "extension" du dossier
+d'installation (par defaut : %LOCALAPPDATA%\Programs\instantaction\extension).
+
+Pour l'activer dans Chrome, Edge, Brave, Vivaldi ou Opera :
+  1. Ouvrez la page des extensions (chrome://extensions, edge://extensions,
+     vivaldi://extensions...).
+  2. Activez le "Mode developpeur".
+  3. Cliquez sur "Charger l'extension non empaquetee".
+  4. Choisissez le dossier "extension" ci-dessus (raccourci disponible dans
+     le menu Demarrer : "instantaction - dossier de l'extension").
+
+Mise a jour : relancez un installeur plus recent, puis cliquez sur le bouton
+"Recharger" de l'extension dans la page des extensions.
+
+Desinstallation : retirez l'extension depuis la page des extensions, puis
+desinstallez instantaction depuis les Parametres Windows.
+
+Code source : https://github.com/Les-Doubles-A/instantaction

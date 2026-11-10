@@ -1,0 +1,12 @@
+@import url('../shared/theme.css');
+body { width: 320px; padding: 14px; }
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.interrupteur { display: flex; gap: 6px; align-items: center; cursor: pointer; }
+.grand { width: 100%; padding: 10px 14px; display: flex; justify-content: space-between; align-items: center; }
+kbd { font: 11px ui-monospace, monospace; border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 6px; padding: 1px 6px; }
+h2 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--texte2); margin: 16px 0 6px; }
+ul { list-style: none; margin: 0; padding: 0; }
+li button { width: 100%; text-align: left; display: flex; gap: 10px; border: 0; background: transparent; padding: 8px 6px; }
+li button:hover { background: var(--survol); }
+nav { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 14px; }
+#message { margin: 8px 0 0; color: var(--danger); }

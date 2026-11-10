@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Mes notes — InstantAction</title>
+  <link rel="stylesheet" href="notes.css" />
+</head>
+<body>
+  <header>
+    <h1>🗒️ Mes notes</h1>
+    <input type="text" id="recherche" placeholder="Rechercher dans les notes…" aria-label="Rechercher dans les notes" />
+    <button id="exporter">Exporter (JSON)</button>
+    <button id="tout-supprimer" class="danger">Tout supprimer</button>
+  </header>
+  <main>
+    <p id="compteur" class="discret"></p>
+    <div id="liste"></div>
+  </main>
+  <script type="module" src="notes.js"></script>
+</body>
+</html>
